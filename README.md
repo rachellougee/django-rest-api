@@ -10,7 +10,7 @@ cd django-rest-api
 
 ```
 
-### Create a virtual environment :
+### Setup virtual environment :
 Create a virtual environment to isolate our package dependencies locally
 ```bash
 python3 -m venv env
@@ -18,6 +18,20 @@ source env/bin/activate
 
 ```
 
+### Install Django and Django REST framework into the virtual environment
+```bash
+pip install django
+pip install djangorestframework
+
+```
+
+### Sync database for the first time
+```bash
+python manage.py migrate
+# create local admin user
+python manage.py createsuperuser --email xxxx@xxxxx.com --username xxxx
+
+```
 
 ### Running the App
 
