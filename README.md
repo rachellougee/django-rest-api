@@ -1,3 +1,3 @@
 # django-rest-api
 
-## django rest api with simple CRUD
+## A simple CRUD rest api using django_rest_framework
